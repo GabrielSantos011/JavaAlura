@@ -1,0 +1,6 @@
+O conceito principal de interfaces foi colocado em prática, porém em java mais modernos temos algumas
+novidades que podem ser interessante dar uma olhada como métodos default e static e final variables
+
+segue links interessantes
+https://www.baeldung.com/java-interfaces
+https://www.baeldung.com/java-static-default-methods
