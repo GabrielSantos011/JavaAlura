@@ -61,6 +61,8 @@ public class TesteLeituraScanner {
             Float valor4 = linhaScanner.nextFloat();
             Double valor5 = linhaScanner.nextDouble();
 
+            linhaScanner.close();
+
             System.out.println(
                     "valor 1 -> " + valor1 + "\n" +
                     "valor 2 -> " + valor2 + "\n" +
@@ -69,7 +71,42 @@ public class TesteLeituraScanner {
                     "valor 5 -> " + valor5 + "\n"
             );
 
-            linhaScanner.close();
+            //obs: formatação de strings
+            //olhar documentação para melhores explicações e entendimento sobre os tipos
+            //mas o básico %s - string
+            //%d - decimal inteiro
+            //%f - ponto flutuante
+
+            String s = String.format(
+                    "valor 1 -> %s \n" +
+                    "valor 2 -> %d \n" +
+                    "valor 3 -> %f \n" +
+                    "valor 4 -> %f \n" +
+                    "valor 5 -> %f \n",
+                    valor1, valor2, valor3, valor4, valor5
+            );
+
+            //porém não é necessário de uma string só para isso
+            //o System.out ja tem um format
+            System.out.format(
+                    "valor 1 -> %s \n" +
+                    "valor 2 -> %d \n" +
+                    "valor 3 -> %f \n" +
+                    "valor 4 -> %f \n" +
+                    "valor 5 -> %f \n",
+                    valor1, valor2, valor3, valor4, valor5
+            );
+
+            //outro ponto é que o format é um método que utiliza sobrecarga
+            //tem um format que passa o Locale
+            //vimos constantes mas podemos criar o nosso
+            System.out.format(new Locale("pt", "BR"),
+                    "valor 1 -> %s \n" +
+                "valor 2 -> %d \n" +
+                "valor 3 -> %f \n" +
+                "valor 4 -> %f \n" +
+                "valor 5 -> %f \n",
+                valor1, valor2, valor3, valor4, valor5);
         }
         scan.close();
     }
