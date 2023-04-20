@@ -14,6 +14,11 @@ public enum Prioridade {
 
     private int valor;
 
+    //como dito acima esse construtor é privado - embora não coloquemos o modificador
+    //fica implicito que ele é privado pois se trata de um enum
+    //em classes podemos funcionaria como o modificador package mas podemos ter o construtor 
+    //privado caso não quisermos que a classe seja instanciada
+    //exemplo de classe cheia de métodos estáticos
     Prioridade(int valor) {
         this.valor = valor;
     }
