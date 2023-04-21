@@ -1,4 +1,4 @@
-package br.com.alura.java.io.sextaAula;
+package br.com.alura.java.io.sextaAula.parteUm;
 
 import java.io.*;
 
