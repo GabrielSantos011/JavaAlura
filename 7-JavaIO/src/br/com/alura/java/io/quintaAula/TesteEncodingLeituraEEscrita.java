@@ -1,4 +1,4 @@
-package quintaAula;
+package br.com.alura.java.io.quintaAula;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -15,7 +15,7 @@ public class TesteEncodingLeituraEEscrita {
         FileReader fr = new FileReader("lorem.tx", StandardCharsets.UTF_8);
 
         //assim por diante
-        
+
     }
 
 }

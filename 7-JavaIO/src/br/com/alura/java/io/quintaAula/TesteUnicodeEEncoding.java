@@ -1,4 +1,4 @@
-package quintaAula;
+package br.com.alura.java.io.quintaAula;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
