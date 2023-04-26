@@ -9,7 +9,7 @@ public class Listas {
 
     public static void main(String[] args) {
         //no curso 6 tivemos ja aulas sobre listas
-        //sabemos que tratasse de uma estrutura em que a ordem importa,
+        //sabemos que trata-se de uma estrutura em que a ordem importa,
         //pode repetir itens, tem indice...
 
         //representação básica para lista:
