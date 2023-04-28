@@ -41,6 +41,19 @@ public class Sets {
         pois não teve matriculas. Nesse caso faria sentido devolver um Collections.emptySet()
         */
         //e para trabalhar com threads (threadsafe) Collections.synchronizedSet(set);
+
+        //há outras implementações de set e uma delas pode ser muito interessante
+        //muito embora as coleções não gaurdem indices há a LinkedHashSet
+        //pela maneira de implementação ela guarda de maneira ordenada
+
+        //outro ponto interessante é que sets não tem indices
+        //conseguimos iterar através de um foreach mas antes do java 5 ele não existia
+        //como era feito?
+        //Collection herda de Iterator e era com ele que era feito
+        Iterator<String> iterador = alunos.iterator();
+        while (iterador.hasNext()) {
+            System.out.println(iterador.next());
+        }
     }
 
 }
