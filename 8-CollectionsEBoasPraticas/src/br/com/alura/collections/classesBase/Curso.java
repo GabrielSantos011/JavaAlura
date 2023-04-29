@@ -1,21 +1,32 @@
 package br.com.alura.collections.classesBase;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 public class Curso {
 
     private String nome;
     private String instrutor;
+    private  Set<Aluno> alunos = new HashSet<>();
 
     //outra implementação da list é o vector
     //utiliza arrays porém é threadsafe
     private List<Aula> aulas = new Vector<Aula>();
+    private Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();
 
     public Curso(String nome, String instrutor) {
         this.nome = nome;
         this.instrutor = instrutor;
+    }
+
+    public void matricula(Aluno aluno) {
+        // adiciona no Set de alunos
+        this.alunos.add(aluno);
+        // cria a relação no Map
+        this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);
+    }
+
+    public Aluno buscaMatriculado(int numero) {
+        return this.matriculaParaAluno.get(numero);
     }
 
     public String getNome() {
