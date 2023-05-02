@@ -17,6 +17,10 @@ public class SomaTotalBonificacao {
     //conseguimos acessar apenas os métodos declarados em funcionario, ou seja, não conseguiremos
     //utilizar o autentica por exemplo
     public void registra(Funcionario f) {
+        if (f instanceof Gerente) {
+            System.out.println("É um Gerente");
+        }
+        
         soma += f.getBonificacao();
     }
 
