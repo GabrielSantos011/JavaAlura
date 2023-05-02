@@ -38,11 +38,11 @@ public class EntendendoExcecao2 {
             //importante notar que esse tratamento poderia ser feito na chamada do metodo2() por ex
             //ou até mesmo na chamada do metodo1()
             //no caso de:
-//            try{
-//                metodo1();
-//            } catch (ArithmeticException ex) {
-//                System.out.println("ocorreu uma ArithmeticException");
-//            }
+            //            try{
+            //                metodo1();
+            //            } catch (ArithmeticException ex) {
+            //                System.out.println("ocorreu uma ArithmeticException");
+            //            }
             //o metodo2() n tem tratamento e volta a ser bruptamente encerrado, porém o metodo1()
             //trata e segue sua rotina normalmente
 
