@@ -1,0 +1,27 @@
+Para este projeto utilizamos a OMDb API
+
+link para gerar uma api key https://www.omdbapi.com/apikey.aspx
+
+recebemos um email com a chave e o link de ativação
+
+a chave API é 76f9959e
+
+no site podemos ver uma documentação bem simplória
+mas uma requisição de exemplo
+https://www.omdbapi.com/?apikey=76f9959e&t=matrix
+
+? - inicia a passagem de parametros
+& - para concatenar path params
+t - param para o nome do Titulo
+
+Postman API é util para testar as requisições
+
+para transformar um JSON em um objeto iremos atuar coma biblioteca Gson
+existem outras mas essa foi a escolhida (versão 2.10.1)
+iremos baixar no mvn repository
+https://mvnrepository.com/
+
+para incluir uma biblioteca
+file > project structure > module > dependencies -> adicionar
+
+a partir do Java 17 -> Record um tipo de classe especial, vale a pena olhar (funciona quase que como um DTO)
