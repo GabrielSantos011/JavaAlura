@@ -1,3 +1,5 @@
+código compativel a partir da jdk11
+
 Para este projeto utilizamos a OMDb API
 
 link para gerar uma api key https://www.omdbapi.com/apikey.aspx
