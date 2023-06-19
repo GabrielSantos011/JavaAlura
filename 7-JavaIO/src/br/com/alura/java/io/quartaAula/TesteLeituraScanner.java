@@ -109,6 +109,23 @@ public class TesteLeituraScanner {
                 valor1, valor2, valor3, valor4, valor5);
         }
         scan.close();
+
+        //curiosidades sobre locale e format
+
+        //caso seja necessário setar um locale default
+        //Locale.setDefault( new Locale("pt", "BR") );
+        System.out.println( Locale.getDefault( ) );
+        
+        Scanner s = new Scanner(System.in);
+        //o sacanner usa o locale default porem podemos usar o
+        //Scanner s = new Scanner(System.in).useLocale( new Locale("pt", "BR") );
+        
+        double d = s.nextDouble();
+        //o getInstace pega conforme o sistema operacional porém podemos passar 
+        //um locale
+        //há também outros métodos específicos para percentual, moeda..
+        String valorFormatado = NumberFormat.getInstance().format(d);
+        System.out.println( valorFormatado );
     }
 
 }
