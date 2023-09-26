@@ -31,5 +31,8 @@ public class Principal {
         convidado4.start();
         limpeza.start();
 
+        //um ponto de observação é lembrar que não sabemos a ordem de execução, e devemos nos prevenir
+        //para não fazer uma thread ficar em espera desnecessáriamente, para que o notify não aconteça antes
+        //do wait
     }
 }
