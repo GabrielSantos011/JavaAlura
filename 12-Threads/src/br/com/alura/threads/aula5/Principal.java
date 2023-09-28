@@ -33,6 +33,6 @@ public class Principal {
 
         //um ponto de observação é lembrar que não sabemos a ordem de execução, e devemos nos prevenir
         //para não fazer uma thread ficar em espera desnecessáriamente, para que o notify não aconteça antes
-        //do wait
+        //do wait, para não ocorrer deadlock...
     }
 }
