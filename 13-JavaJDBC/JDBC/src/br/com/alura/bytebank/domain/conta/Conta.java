@@ -1,6 +1,7 @@
 package br.com.alura.bytebank.domain.conta;
 
 import br.com.alura.bytebank.domain.cliente.Cliente;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -10,10 +11,10 @@ public class Conta {
     private BigDecimal saldo;
     private Cliente titular;
 
-    public Conta(Integer numero, Cliente titular) {
+    public Conta(Integer numero, BigDecimal saldo, Cliente titular) {
         this.numero = numero;
         this.titular = titular;
-        this.saldo = BigDecimal.ZERO;
+        this.saldo = saldo;
     }
 
     public boolean possuiSaldo() {
