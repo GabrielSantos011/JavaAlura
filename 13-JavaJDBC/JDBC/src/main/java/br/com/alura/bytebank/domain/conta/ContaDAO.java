@@ -61,7 +61,7 @@ public class ContaDAO {
         ResultSet resultSet;
         Set<Conta> contas = new HashSet<>();
 
-        String sql = "SELECT * FROM conta WHERE esta_ativa = true";
+        String sql = "SELECT * FROM conta";
 
         try {
             ps = conn.prepareStatement(sql);
@@ -92,7 +92,7 @@ public class ContaDAO {
     }
 
     public Conta listarPorNumero(Integer numero) {
-        String sql = "SELECT * FROM conta WHERE numero = ? and esta_ativa = true";
+        String sql = "SELECT * FROM conta WHERE numero = ?";
 
         PreparedStatement ps;
         ResultSet resultSet;
